@@ -20,7 +20,7 @@ const Profile = () => {
 
         <section>
             <div className="container">
-                <div className="card rounded border border-3 w-75 p-5 mx-auto">
+                <div className="card rounded border border-3 w-sm-75 p-5 mx-auto">
                     <div className="about mx-auto">
                         <p className='h4 text-center'>Tentang Perusahaan</p>
                         <p className='fs-6 my-4'>
@@ -36,7 +36,7 @@ const Profile = () => {
                         </p>
                     </div>
                 </div>
-                <div className="card rounded border border-3 w-75 p-5 mt-5 mx-auto">
+                <div className="card rounded border border-3 w-sm-75 p-5 mt-5 mx-auto">
                     <div className="about mx-auto">
                         <p className='h4 text-center'>Visi dan Misi Perusahaan</p>
                         <p className='h5 mt-5 mb-2 text-start'>Visi</p>
@@ -51,7 +51,7 @@ const Profile = () => {
                         <p className='fs-6 text-start'>4. Meningkatkan keuntungan perusahaan.</p>
                     </div>
                 </div>
-                <div className="card rounded border border-3 w-75 p-5 mt-5 mx-auto">
+                <div className="card rounded border border-3 w-sm-75 p-5 mt-5 mx-auto">
                     <div className="about mx-auto">
                         <p className='h4 text-center'>Budaya Organisasi</p>
                         <p className='h5 mt-5 mb-2 text-start'>Jujur</p>
@@ -76,7 +76,7 @@ const Profile = () => {
                         <p className='fs-6 mb-4 text-start'>Bersegera melakukan kegiatan yang sudah ditugaskan dan atau yang menjadi tuntutan untuk mencapai target sampai berhasil.</p>
                     </div>
                 </div>
-                <div className="card rounded border border-3 w-75 p-5 mt-5 mx-auto">
+                <div className="card rounded border border-3 w-sm-75 p-5 mt-5 mx-auto">
                     <div className="about mx-auto">
                         <p className='h4 text-center'>Struktur Organisasi</p>
                         <div className="d-flex  mt-5 mb-2">
@@ -85,26 +85,39 @@ const Profile = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card rounded border border-3 w-75 p-5 mt-5 mx-auto">
-                    <div className="about mx-auto">
+                <div className="card rounded border border-3 w-sm-75 p-5 mt-5 mx-auto">
+                    <div className="about mx-auto d-grid justify-content-sm-center">
                         <p className='h4 text-center'>Portofolio</p>
-                        <div className="card d-grid p-4 mt-5">
-                            <p className='h5 text-start mt-3'>1. Hermina Februari 2019 s/d Januari 2020 Pengerjaan Mechanical, Electrical dan Plumbing di Gedung Rumah Sakit Hermina Arcamanik Kota Bandung.</p>
-                            <img src={img1} className={'mx-auto my-5 '+styles.img} alt="" />
-                            <img src={img2} className={'mx-auto my-5 '+styles.img} alt="" />
-                            <img src={img3} className={'mx-auto my-5 '+styles.img} alt="" />
-                            <img src={img4} className={'mx-auto my-5 '+styles.img} alt="" />
-                        </div>
-                        <div className="card d-grid p-4 mt-5">
-                            <p className='h5 text-start mt-3'>2. Dapen Pindad September 2022 s/d November 2022 Pengerjaan Mechanical, Electrical di Gedung Dapen Pindad Kota Bandung.</p>
-                            <img src={img5} className={'mx-auto my-5 '+styles.img} alt="" />
-                            <img src={img6} className={'mx-auto my-5 '+styles.img} alt="" />
-                            <img src={img7} className={'mx-auto my-5 '+styles.img} alt="" />
-                            <img src={img8} className={'mx-auto my-5 '+styles.img} alt="" />
-                        </div>
+                        {/* <div className="card d-grid p-4 mt-5"> */}
+                            <p className='h6 h5-sm text-start mt-3'>1. Hermina Februari 2019 s/d Januari 2020 Pengerjaan Mechanical, Electrical dan Plumbing di Gedung Rumah Sakit Hermina Arcamanik Kota Bandung.</p>
+                            <div className="d-flex-sm">
+
+                            <img src={img1} className={'mx-3 mb-5 mb-sm-5 '+styles.img} alt="" />
+                            <img src={img2} className={'mx-3 mb-5 mb-sm-5 '+styles.img} alt="" />
+                            </div>
+                            <div className="d-flex-sm my-5 mt-sm-4">
+
+                            <img src={img3} className={'mx-3 mb-5 mb-sm-5 '+styles.img} alt="" />
+                            <img src={img4} className={'mx-3 mb-5 mb-sm-5 '+styles.img} alt="" />
+                            </div>
+                        {/* </div> */}
+                        {/* <div className="card d-grid p-4 mt-5"> */}
+                            <p className='h6 h5-sm text-start mt-5'>2. Dapen Pindad September 2022 s/d November 2022 Pengerjaan Mechanical, Electrical di Gedung Dapen Pindad Kota Bandung.</p>
+                            <div className="d-flex-sm">
+
+                            <img src={img5} className={'mx-3 my-5 '+styles.img} alt="" />
+                            <img src={img6} className={'mx-3 my-5 '+styles.img} alt="" />
+                            </div>
+                            <div className="d-flex-sm">
+
+                            <img src={img7} className={'mx-3 mb-5 '+styles.img} alt="" />
+                            <img src={img8} className={'mx-3 mb-5 '+styles.img} alt="" />
+                            </div>
+                        {/* </div> */}
                     </div>
                 </div>
             </div>
+                    <hr className='my-5' />
         </section>
 
         <footer className='mt-5'>

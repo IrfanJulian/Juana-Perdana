@@ -2,3 +2,10 @@
     width: 500px;
     height: 750px;
 }
+
+@media only screen and (max-width: 500px) {
+    .img{
+        width: 90%;
+        height: 50%;
+    }
+  }
